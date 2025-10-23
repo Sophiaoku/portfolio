@@ -358,7 +358,7 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(max-width: 400px) {
     .nav__item:not(:last-child) {
-        margin-right: var(--gutter-normal);
+        margin-right: var(--gutter-medium); /*--gutter-normal*/
     }
 }
 
@@ -371,26 +371,31 @@ body:not(.user-is-tabbing) a:focus {
 .nav__link {
     position: relative;
     display: inline-block;
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--black);
+    border-radius: 4px;
     text-decoration: none;
     color: inherit;
     transition: all .2s;
 }
 
 .nav__link::after {
-    content: '';
+    /* content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 100%;
-    display: inline-block;
-    height: 1rem;
+    right: 100%; */
+    display: none; /*remove inline-block*/
+    /* height: 1rem;
     background: var(--white);
-    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9); */
 }
 
 .nav__link:hover {
-    color: var(--white-1);
+    /* color: var(--white-1); */
+    color: var(--pink); /* Keep the text color change on hover */
+    background-color: rgba(255, 50, 88, 0.1); /* Add a very subtle pink background hover */
+    border-color: var(--pink); /* Change border color on hover */
 }
 
 .nav__link:hover::after {
