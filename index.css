@@ -492,10 +492,12 @@ body:not(.user-is-tabbing) a:focus {
     height: 3rem;
     margin-left: var(--gutter-normal);
     transition: all .3s;
+    filter: invert(100%);
 }
 
 .work__code:hover {
     transform: scale(1.2);
+    filter: invert(100%);
 }
 
 .work__image-box {
@@ -603,6 +605,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .footer__social-image {
     height: 4rem;
+    filter: invert(100%);
 }
 
 .footer__github-buttons {
