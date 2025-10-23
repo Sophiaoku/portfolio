@@ -390,13 +390,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover {
-    color: var(--black);
+    color: var(--white-1);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: var(--black);
+    background: var(--white-1);
 }
 
 /* --------------------------------------- */
@@ -417,12 +417,12 @@ body:not(.user-is-tabbing) a:focus {
 .header .heading-primary span,
 .header p,
 .header .btn {
-    color: var(--black);
-    border-color: var(--black);
+    color: var(--white);
+    border-color: var(--white);
 }
 
 .header .btn::after {
-    background: var(--black); 
+    background: var(--white); 
 }
 
 .header__text {
